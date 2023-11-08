@@ -10,12 +10,18 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
 
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
         &--is-active {
             display: grid;
         }
 
         &__item {
             img {
+                width: 500px;
+                height: 500px;
                 max-width: 100%;
                 border-radius: 4px;
             }
@@ -26,17 +32,27 @@
         display: flex;
         justify-content: center;
 
+        @media (max-width: 768px) {
+            white-space: nowrap;
+            overflow-x: scroll;
+            padding-left: 20px;
+        }
+
         &__button {
-            color: variaveis.$corDeFundoBotaoSecundario;
+            color: variaveis.$corDeFundoSecundario;
             font-size: 20px;
             border: none;
-            border-bottom: 5px solid variaveis.$corDeFundoBotaoSecundario;
+            border-bottom: variaveis.$corDeFundoSecundario;
             padding-bottom: 5px;
             background: none;
             text-transform: uppercase;
             margin: 0 1vw;
             cursor: pointer;
             border-bottom: 5px solid transparent;
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
         }
     }
 }

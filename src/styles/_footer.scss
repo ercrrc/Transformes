@@ -32,7 +32,7 @@
                 display: block;
 
                 &:hover {
-                    color: variaveis.$corDeFundoBotaoSecundario;
+                    color: variaveis.$corDeFundoSecundario;
                 }
             }
         }
@@ -59,7 +59,7 @@
         height: 40px;
 
         &:hover {
-            color: variaveis.$corDeFundoBotaoSecundario
+            color: variaveis.$corDeFundoSecundario
         }
 
         option: {
